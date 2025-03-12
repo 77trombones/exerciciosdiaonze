@@ -1,0 +1,63 @@
+#include <stdio.h>
+
+int main()
+{
+	
+	float a,b,c;
+	
+	printf("digite o peso: ");
+	
+	scanf("%f",&a);
+	
+	printf("digite a altura: ");
+	
+	scanf("%f",&b);
+	
+	c = (a / (b*b));
+	
+	if(c >=0){
+		if(c<18.5){
+			puts("baixo peso");
+		}
+	}
+	
+	if(c >=18.5){
+		if(c<25){
+			puts("intervalo normal");
+		}
+	}
+	
+	if(c >=25){
+		if(c<30){
+			puts("sobrepeso");
+		}
+	}
+	
+	
+	if(c >=30){
+		if(c<35){
+			puts("obesidade classe I");
+		}
+	}
+	
+	if(c >=35){
+		if(c<40){
+			puts("obesidade classe II");
+		}
+	}
+	
+	
+	
+	if(c>40){
+			puts("obesidade classe II");
+		}
+	
+	
+	
+	
+	
+		
+	
+	
+	return 0;
+}
